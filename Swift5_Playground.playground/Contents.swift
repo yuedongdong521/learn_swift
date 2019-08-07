@@ -140,3 +140,6 @@ wyy.obj.name = "wyy"
 wyy.doSamething()
 ydd.doSamething()
 
+
+
+
