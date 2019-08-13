@@ -186,7 +186,7 @@ do {
     }
     
     let ace = Rank.ace
-    let aceRawValue = ace.rawValue
+    ace.rawValue
     ace.simpleDescription()
     let tow = Rank.tow
     tow.simpleDescription()

@@ -171,5 +171,31 @@ do {
     
 }
 
-
+// 查重
+do {
+    
+    func uniqueArr(array:Array<Int>) -> Array<Int>? {
+        if array.count == 0 {
+           return nil
+        }
+        let arr = array.sorted()
+        var newArr = Array<Int>()
+        var v = arr[0]
+        newArr.append(v)
+        for index in 1..<arr.count {
+            let a = arr[index]
+            if a == v {
+                continue
+            }
+            v = a
+            newArr.append(v)
+        }
+        return newArr
+    }
+    
+    let arr = uniqueArr(array: targetArr)
+    print("去重 \n targetArr : \(targetArr)\n newArr : \((arr ?? []))")
+    
+    
+}
 
